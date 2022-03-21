@@ -18,19 +18,37 @@ for (let i = 1; i <= 100; i++) {
 
 }
 
-function myGenera() {}
+let difficulty = document.getElementById("choice").value;
+
+function myGenera() {
+    for (let i = 1; i <= 100; i++) {
+
+        if ( difficulty == "facile" ){
+
+            document.getElementById("contenitoreNumeri").innerHTML += `
+      <div class="diecibox text-center fs-2">
+        <div class="py-5 bg-success">${i}</div>
+      </div>`;
+
+        } else if ( difficulty == "medio" ){
+
+            document.getElementById("contenitoreNumeri").innerHTML += `
+      <div class="ottobox text-center fs-2">
+        <div class="py-5 bg-success">${i}</div>
+      </div>`;
+
+        } else if( difficulty == "difficile" ){
+
+            document.getElementById("contenitoreNumeri").innerHTML += `
+      <div class="cinquebox text-center fs-2">
+        <div class="py-5 bg-success">${i}</div>
+      </div>`;
+    
+        }
+    }
+}
 
 // document.getElementById("contenitoreNumeri").innerHTML += `
 //       <div class="diecibox text-center fs-2 p-3">
 //         <div class="py-5 bg-success">${i}</div>
 //       </div>`;
-
-      for (let i = 1; i <= 100; i++) {
-
-        document.getElementById("contenitoreNumeri").innerHTML += `
-      <div class="diecibox text-center fs-2">
-        <div class="py-5 bg-success">${i}</div>
-      </div>`;
-    
-    }
-

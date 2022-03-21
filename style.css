@@ -24,4 +24,15 @@
 
 .diecibox{
     width: calc((100% / 10) - 5px);
+    border: 1px solid black;
+}
+
+.ottobox{
+    width: calc((100% / 8) - 5px);
+    border: 1px solid black;
+}
+
+.cinquebox{
+    width: calc((100% / 5) - 5px);
+    border: 1px solid black;
 }
