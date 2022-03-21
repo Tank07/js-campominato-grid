@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* .containerop{
+.containerop{
     border: 1px solid red;
     width: 80%;
     margin: 0 auto;
@@ -14,13 +14,13 @@
 }
 
 .box{
-    width: calc(100%/8);
-    height: calc(100%/8);
+    width: calc(100%/10);
+    height: calc(100%/10);
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid red;
-} */
+}
 
 .diecibox{
     width: calc((100% / 10) - 5px);

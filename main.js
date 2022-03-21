@@ -15,40 +15,36 @@ for (let i = 1; i <= 100; i++) {
 
     box.innerHTML += i;
     box.classList.add("box");
+    grid.appendChild(box);
 
 }
 
-let difficulty = document.getElementById("choice").value;
+let difficulty = document.getElementById("difficolta").value;
 
 function myGenera() {
     for (let i = 1; i <= 100; i++) {
 
         if ( difficulty == "facile" ){
 
-            document.getElementById("contenitoreNumeri").innerHTML += `
+            document.getElementById("contenitoreBombe").innerHTML += `
       <div class="diecibox text-center fs-2">
         <div class="py-5 bg-success">${i}</div>
       </div>`;
 
         } else if ( difficulty == "medio" ){
 
-            document.getElementById("contenitoreNumeri").innerHTML += `
+            document.getElementById("contenitoreBombe").innerHTML += `
       <div class="ottobox text-center fs-2">
-        <div class="py-5 bg-success">${i}</div>
+        <div class="py-5 bg-danger">${i}</div>
       </div>`;
 
         } else if( difficulty == "difficile" ){
 
-            document.getElementById("contenitoreNumeri").innerHTML += `
+            document.getElementById("contenitoreBombe").innerHTML += `
       <div class="cinquebox text-center fs-2">
-        <div class="py-5 bg-success">${i}</div>
+        <div class="py-5 bg-primary">${i}</div>
       </div>`;
     
         }
     }
 }
-
-// document.getElementById("contenitoreNumeri").innerHTML += `
-//       <div class="diecibox text-center fs-2 p-3">
-//         <div class="py-5 bg-success">${i}</div>
-//       </div>`;
