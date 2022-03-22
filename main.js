@@ -21,7 +21,7 @@
 
 // }
 
-function myGenera() {        
+function myGenera() {       
 
         let difficulty = document.getElementById("difficolta").value;
 
@@ -35,7 +35,7 @@ function myGenera() {
 
             document.getElementById("contenitoreBombe").innerHTML += `
       <div class="diecibox text-center fs-2">
-        <div class="py-5 bg-success">${i}</div>
+        <div class="py-5 ">${i}</div>
       </div>`;
 
           }
@@ -50,7 +50,7 @@ function myGenera() {
 
             document.getElementById("contenitoreBombeUno").innerHTML += `
       <div class="ottobox text-center fs-2">
-        <div class="py-5 bg-danger">${i}</div>
+        <div class="py-5 ">${i}</div>
       </div>`;
 
           }
@@ -65,9 +65,28 @@ function myGenera() {
 
             document.getElementById("contenitoreBombeDue").innerHTML += `
       <div class="cinquebox text-center fs-2">
-        <div class="py-5 bg-primary">${i}</div>
+        <div class="py-5 ">${i}</div>
       </div>`;
     
           }
         }
 }
+
+diecibox.addEventListener("click", function(){
+  this.classList.add("clicked");
+
+});
+
+ottobox.addEventListener("click", function(){
+  console.log(this)
+  this.classList.add("clicked");
+  console.log(this.innerHTML)
+
+});
+
+cinquebox.addEventListener("click", function(){
+  console.log(this)
+  this.classList.add("clicked");
+  console.log(this.innerHTML)
+
+});

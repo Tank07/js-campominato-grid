@@ -23,6 +23,12 @@
     display: none;
   }
 
+.clicked{
+    background-color: black;
+    color: red;
+
+}
+
 /* Altra maniera per fare gliglia
 .container{
     border: 1px solid red;
