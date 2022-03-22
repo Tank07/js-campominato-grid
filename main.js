@@ -7,25 +7,29 @@
 // con difficoltà 2 => tra 1 e 81
 // con difficoltà 3 => tra 1 e 49
 
-let grid = document.getElementById("grid");
 
-for (let i = 1; i <= 100; i++) {
+// Altra maniera per fare una griglia
+// let grid = document.getElementById("grid");
 
-    let box = document.createElement("div");
+// for (let i = 1; i <= 100; i++) {
 
-    box.innerHTML += i;
-    box.classList.add("box");
-    grid.appendChild(box);
+//     let box = document.createElement("div");
 
-}
+//     box.innerHTML += i;
+//     box.classList.add("box");
+//     grid.appendChild(box);
 
-
+// }
 
 function myGenera() {        
 
         let difficulty = document.getElementById("difficolta").value;
 
         if ( difficulty == "facile" ){
+
+          contenitoreBombe.classList.remove("d-none");
+          contenitoreBombeUno.classList.add("d-none");
+          contenitoreBombeDue.classList.add("d-none");
 
           for (let i = 1; i <= 100; i++) {
 
@@ -38,9 +42,13 @@ function myGenera() {
 
         } else if ( difficulty == "medio" ){
 
+          contenitoreBombeUno.classList.remove("d-none");
+          contenitoreBombe.classList.add("d-none");
+          contenitoreBombeDue.classList.add("d-none");
+
           for (let i = 1; i <= 81; i++) {
 
-            document.getElementById("contenitoreBombe").innerHTML += `
+            document.getElementById("contenitoreBombeUno").innerHTML += `
       <div class="ottobox text-center fs-2">
         <div class="py-5 bg-danger">${i}</div>
       </div>`;
@@ -49,9 +57,13 @@ function myGenera() {
 
         } else if( difficulty == "difficile" ){
 
+          contenitoreBombeUno.classList.add("d-none");
+          contenitoreBombe.classList.add("d-none");
+          contenitoreBombeDue.classList.remove("d-none");
+
           for (let i = 1; i <= 49; i++) {
 
-            document.getElementById("contenitoreBombe").innerHTML += `
+            document.getElementById("contenitoreBombeDue").innerHTML += `
       <div class="cinquebox text-center fs-2">
         <div class="py-5 bg-primary">${i}</div>
       </div>`;

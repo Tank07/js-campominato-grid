@@ -4,7 +4,27 @@
     box-sizing: border-box;
 }
 
-.containerop{
+.diecibox{
+    width: calc((100% / 10) - 5px);
+    border: 1px solid black;
+}
+
+.ottobox{
+    width: calc((100% / 8) - 5px);
+    border: 1px solid black;
+}
+
+.cinquebox{
+    width: calc((100% / 5) - 5px);
+    border: 1px solid black;
+}
+
+.d-none{
+    display: none;
+  }
+
+/* Altra maniera per fare gliglia
+.container{
     border: 1px solid red;
     width: 80%;
     margin: 0 auto;
@@ -20,19 +40,4 @@
     justify-content: center;
     align-items: center;
     border: 1px solid red;
-}
-
-.diecibox{
-    width: calc((100% / 10) - 5px);
-    border: 1px solid black;
-}
-
-.ottobox{
-    width: calc((100% / 8) - 5px);
-    border: 1px solid black;
-}
-
-.cinquebox{
-    width: calc((100% / 5) - 5px);
-    border: 1px solid black;
-}
+} */
