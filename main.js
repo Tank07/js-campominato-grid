@@ -19,32 +19,43 @@ for (let i = 1; i <= 100; i++) {
 
 }
 
-let difficulty = document.getElementById("difficolta").value;
 
-function myGenera() {
-    for (let i = 1; i <= 100; i++) {
+
+function myGenera() {        
+
+        let difficulty = document.getElementById("difficolta").value;
 
         if ( difficulty == "facile" ){
+
+          for (let i = 1; i <= 100; i++) {
 
             document.getElementById("contenitoreBombe").innerHTML += `
       <div class="diecibox text-center fs-2">
         <div class="py-5 bg-success">${i}</div>
       </div>`;
 
+          }
+
         } else if ( difficulty == "medio" ){
+
+          for (let i = 1; i <= 81; i++) {
 
             document.getElementById("contenitoreBombe").innerHTML += `
       <div class="ottobox text-center fs-2">
         <div class="py-5 bg-danger">${i}</div>
       </div>`;
 
+          }
+
         } else if( difficulty == "difficile" ){
+
+          for (let i = 1; i <= 49; i++) {
 
             document.getElementById("contenitoreBombe").innerHTML += `
       <div class="cinquebox text-center fs-2">
         <div class="py-5 bg-primary">${i}</div>
       </div>`;
     
+          }
         }
-    }
 }
